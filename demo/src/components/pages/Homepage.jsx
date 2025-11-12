@@ -1,7 +1,5 @@
-// src/components/pages/Homepage.jsx
 import React from 'react';
 import { Button } from 'antd';
-// Import tất cả các icon cần thiết
 import { CheckCircle, Award, Zap, Star, Users, BookOpen, MapPin, Phone, Mail } from 'lucide-react'; 
 import FeatureCard from '../ui/FeatureCard';
 import ScrollAnimateWrapper from '../ui/ScrollAnimateWrapper';
@@ -30,7 +28,7 @@ const bestSellingBooks = [
     { id: 2, title: "Design Patterns (GoF)", author: "Gamma et al.", sales: 850 },
     { id: 3, title: "Lập trình Web Nâng Cao", author: "OCEAN Team", sales: 980 },
 ];
-// --- Hết Dữ liệu giả lập ---
+
 
 
 const Homepage = () => {
@@ -71,7 +69,7 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* 2. Feature Section (Lý Do Chọn) - Nâng cấp card và hiệu ứng */}
+      {/* 2. Feature Section (Lý Do Chọn) */}
       <ScrollAnimateWrapper animationClass="opacity-100 translate-y-0" delay={0}>
         <section className="max-w-7xl px-6 py-20 mx-auto bg-white -mt-16 relative z-20 rounded-xl shadow-2xl">
           <h2 className="mb-14 text-4xl font-bold text-center text-gray-800 animate-in fade-in-up duration-700">
@@ -97,7 +95,7 @@ const Homepage = () => {
         </section>
       </ScrollAnimateWrapper>
 
-      {/* 3. Section Giả Lập Nội Dung Dài - Đổi background và làm nổi bật hơn */}
+      {/* 3. Section Giả Lập Nội Dung Dài */}
       <ScrollAnimateWrapper animationClass="opacity-100 translate-y-0" delay={0}>
         <section className="max-w-7xl px-6 py-24 mx-auto text-center bg-gradient-to-b from-gray-100 to-white mt-16 rounded-xl shadow-inner">
           <h2 className="mb-8 text-4xl font-bold text-gray-800">
@@ -123,7 +121,7 @@ const Homepage = () => {
         </section>
       </ScrollAnimateWrapper>
       
-      {/* 4. Đánh Giá Người Dùng (Testimonials) - Nâng cấp card và hình ảnh */}
+      {/* 4. Đánh Giá Người Dùng (Testimonials) */}
       <ScrollAnimateWrapper animationClass="opacity-100 translate-y-0" delay={0}>
         <section className="max-w-7xl px-6 py-20 mx-auto bg-gradient-to-r from-blue-50 to-indigo-50 mt-16 rounded-xl shadow-inner">
             <h2 className="mb-14 text-4xl font-bold text-center text-primary-DEFAULT">
@@ -201,7 +199,7 @@ const Homepage = () => {
         </section>
       </ScrollAnimateWrapper>
 
-      {/* 6. Sách Bán Chạy - Nâng cấp list item */}
+      {/* 6. Sách Bán Chạy */}
       <ScrollAnimateWrapper animationClass="opacity-100 translate-y-0" delay={0}>
         <section className="max-w-7xl px-6 py-20 mx-auto">
             <h2 className="mb-14 text-4xl font-bold text-center text-darkblue">
@@ -232,7 +230,7 @@ const Homepage = () => {
         </section>
       </ScrollAnimateWrapper>
       
-      {/* 7. NEW: Section Tích Hợp Google Maps (Giả lập) - Nổi bật thông tin liên hệ */}
+      {/* 7 Section Tích Hợp Google Maps (Giả lập) */}
       <ScrollAnimateWrapper animationClass="opacity-100 translate-y-0" delay={0} threshold={0.2}>
         <section className="px-6 py-20 bg-gradient-to-tr from-gray-200 to-gray-50 mt-16 rounded-t-xl shadow-inner">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
